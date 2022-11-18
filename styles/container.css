@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto';
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 33px;
+}
+
+.convert {
+    display: flex;
+    gap: 123px;
+}
+
+.convert__list {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.convert__list li {
+    display: flex;
+    border: 1px #E5E5E5 solid;
+    width: 62px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #C6C6C6;
+}
+
+input:focus, input {
+    outline: none;
+    border: 0px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 36px;
+    width: 100%;
+}
+
+.convert__result {
+    border: 1px #E5E5E5 solid;
+    padding: 14px;
+    margin: 0px;
+}
+
+.convert__list_left {
+    border-radius: 3px 0px 0px 3px;
+}
+
+.convert__list_right {
+    border-radius: 0px 3px 3px 0px;
+}
+
+.convert p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.convert__to, .convert__from {
+    width: 259px;
+}
+
+.top-p {
+    color: #9F9F9F;
+    font-size: 12px;
+}
+
+.bottom-p {
+    color: #C6C6C6;
+    font-size: 12px;
+}
+
+.convert__list .convert__list_selected {
+    background-color: #833AE0;
+    color: white;
+}

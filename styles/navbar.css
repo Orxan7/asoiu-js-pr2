@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    background-color: #F5F5F6;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 56px;
+
+}
+
+.navbar__image {
+    height: 23px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.navbar__list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 17px;
+}
+
+.navbar__list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar__list_item {
+    font-weight: 500;
+    color: #959BA4;
+    text-decoration: none;
+}
+
+.navbar__list_item-selected {
+    color: black;
+}
+
+.navbar__button {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 9px;
+    height: 33px;
+    width: 58px;
+    font-weight: bold;
+    border: 0px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
