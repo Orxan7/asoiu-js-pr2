@@ -1,10 +1,8 @@
-import todoModel from './todo.model.js';
 import todoView from './todo.view.js';
 
 
 class todoController {
     constructor() {
-        this.model = new todoModel()
         this.view = new todoView()
         this.eventListener()
     }

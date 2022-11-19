@@ -2,6 +2,7 @@ class todoView {
     constructor(){
         this.fromNow = 0
         this.toNow = 0 
+        this.i = 0
     }
 
     navbarItemColor(element){
@@ -15,7 +16,6 @@ class todoView {
         element.className += ' convert__list_selected'
         let currencyTo = this.getCurrency(element.textContent, document.querySelector('.convert__to_list .convert__list_selected').textContent)
         let currencyFrom = this.getCurrency(document.querySelector('.convert__to_list .convert__list_selected').textContent, element.textContent)
-
         currencyTo.then((data)=>{
             document.querySelector('.currency-from').textContent = '1 '+ element.textContent + ' = ' 
             + Math.round(data*10000)/10000 + " " + document.querySelector('.convert__to_list .convert__list_selected').textContent
@@ -63,7 +63,6 @@ class todoView {
 
     changeInput(element){
         if(element.parentElement.className.includes('from')){
-            console.log(this.fromNow)
             document.querySelector(".right-input").value = Math.round((element.value*this.toNow)*10000)/10000
         }
         else if(element.parentElement.className.includes('to')){
@@ -82,7 +81,14 @@ class todoView {
         .then(res => res.json())
         .then(data => data.rates[to])
         .catch(()=>{
-            alert('Something went wrong')
+            if(this.i%2==1){
+                alert('Something went wrong')
+                this.i++
+            }
+            else
+            {
+                this.i++
+            }
             return 0
         })
         return result
