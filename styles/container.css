@@ -42,6 +42,7 @@ h1 {
     align-items: center;
     cursor: pointer;
     color: #C6C6C6;
+    font-weight: 300;
 }
 
 input:focus, input {
@@ -57,6 +58,7 @@ input:focus, input {
     border: 1px #E5E5E5 solid;
     padding: 14px;
     margin: 0px;
+    border-radius: 3px;
 }
 
 .convert__list_left {
