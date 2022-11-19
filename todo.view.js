@@ -64,10 +64,10 @@ class todoView {
     changeInput(element){
         if(element.parentElement.className.includes('from')){
             console.log(this.fromNow)
-            document.querySelector(".right-input").value = Math.round((element.value*this.fromNow)*10000)/10000
+            document.querySelector(".right-input").value = Math.round((element.value*this.toNow)*10000)/10000
         }
         else if(element.parentElement.className.includes('to')){
-            document.querySelector(".left-input").value = Math.round((element.value*this.toNow)*10000)/10000
+            document.querySelector(".left-input").value = Math.round((element.value*this.fromNow)*10000)/10000
         }
     }
 
