@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/container.css">
     <link rel="stylesheet" href="styles/navbar.css">
-    <title>To Do</title>
+    <title>Converter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -31,27 +31,27 @@
             <div class="convert__from">
                 <p class="top-p">У меня есть</p>
                 <ul class="convert__from_list convert__list">
-                    <li class="convert__list_left">RUB</li>
-                    <li>USD</li>
-                    <li>EUR</li>
-                    <li class="convert__list_right convert__list_selected">GBP</li>
+                    <li class="convert__list_item convert__list_left convert__list_selected">RUB</li>
+                    <li class="convert__list_item">USD</li>
+                    <li class="convert__list_item">EUR</li>
+                    <li class="convert__list_item convert__list_right">GBP</li>
                 </ul>
                 <div class="convert__from_result convert__result">
-                    <input type="text" value="5000">
-                    <p class="bottom-p">Курс</p>
+                    <input type="text" value="5000" class="left-input">
+                    <p class="bottom-p currency-from">1 RUB = 1 RUB</p>
                 </div>
             </div>
             <div class="convert__to">
                 <p class="top-p">Хочу приобрести</p>
                 <ul class="convert__to_list convert__list">
-                    <li class="convert__list_left convert__list_selected">RUB</li>
-                    <li class="">USD</li>
-                    <li>EUR</li>
-                    <li class="convert__list_right">GBP</li>
+                    <li class="convert__list_item convert__list_left">RUB</li>
+                    <li class="convert__list_item convert__list_selected">USD</li>
+                    <li class="convert__list_item">EUR</li>
+                    <li class="convert__list_item convert__list_right">GBP</li>
                 </ul>
                 <div class="convert__to_result convert__result">
-                    <input type="text" value="5000">
-                    <p class="bottom-p">Курс</p>
+                    <input type="text" value="5000" class="right-input">
+                    <p class="bottom-p currency-to">1 RUB = 1 RUB</p>
                 </div>
             </div>
         </div>
