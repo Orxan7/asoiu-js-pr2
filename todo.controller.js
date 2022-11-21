@@ -1,16 +1,18 @@
-import todoView from './todo.view.js';
+import TodoModel from './todo.model.js';
+import TodoView from './todo.view.js';
 
 
-class todoController {
+class TodoController {
     constructor() {
-        this.view = new todoView()
+        this.model = new TodoModel()
+        this.view = new TodoView()
         this.eventListener()
     }
 
 
     eventListener(){
-        this.view.rightCurrency(document.querySelector('.convert__to_list .convert__list_selected'))
-        this.view.leftCurrency(document.querySelector('.convert__from_list .convert__list_selected'))
+        this.model.rightCurrency(document.querySelector('.convert__to_list .convert__list_selected'))
+        this.model.leftCurrency(document.querySelector('.convert__from_list .convert__list_selected'))
         this.navbarListener()
         this.currencyListener()
         this.inputListener()
@@ -26,15 +28,15 @@ class todoController {
 
 
     currencyListener(){
-        document.querySelectorAll('.convert__list_item').forEach(element =>{
+        document.querySelectorAll('.convert__list-item').forEach(element =>{
             element.addEventListener('click', ()=>{
                 if(element.parentElement.className.includes('from'))
                 {
-                    this.view.leftCurrency(element)
+                    this.model.leftCurrency(element)
                 }
                 else if(element.parentElement.className.includes('to'))
                 {
-                    this.view.rightCurrency(element)
+                    this.model.rightCurrency(element)
                 }  
             })
         })
@@ -48,7 +50,7 @@ class todoController {
                     key = '.'
                 }
                 if(('0123456789'.includes(key))||key==null){
-                    this.view.changeInput(element)
+                    this.view.changeInput(element, this.model.fromNow, this.model.toNow)
                 }
                 if(!('0123456789'.includes(key))&&key!=null){
                     element.value = element.value.substring(0, element.value.length - 1)
@@ -67,4 +69,4 @@ class todoController {
     }
   }
 
-export default todoController;
+export default TodoController;

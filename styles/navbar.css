@@ -3,28 +3,30 @@
     margin: 0px;
     padding: 0px;
     height: 50px;
-    background-color: #F5F5F6;
     justify-content: center;
+    background-color: #F5F5F6;
     gap: 100px;
     margin-bottom: 56px;
-
 }
 
 .navbar__image {
+    left: 20%;
     height: 23px;
     margin-top: 15px;
     cursor: pointer;
 }
 
 .navbar__list {
+    left: 33%;
+    display: flex;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
     margin-top: 17px;
+    margin-right: 20px;
 }
 
 .navbar__list li {
-    display: inline-block;
     margin-right: 20px;
 }
 
@@ -39,6 +41,7 @@
 }
 
 .navbar__button {
+    right: 20%;
     padding: 0px;
     margin: 0px;
     margin-top: 9px;

@@ -1,3 +1,3 @@
-import todoController from './todo.controller.js';
+import TodoController from './todo.controller.js';
 
-const app = new todoController();
+const app = new TodoController();
